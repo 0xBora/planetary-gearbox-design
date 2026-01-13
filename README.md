@@ -124,13 +124,13 @@ For each tooth combination, the script calculates complete involute gear geometr
 
 ### 1. Load spectrum generation
 
-`01_create_loads.m` - Bins race telemetry data (torque/speed) into histogram
+`scripts/01_create_loads.m` - Bins race telemetry data (torque/speed) into histogram
 
-`02_create_load_spectrum.m` - Converts histogram to normalized load spectrum for fatigue analysis
+`scripts/02_create_load_spectrum.m` - Converts histogram to normalized load spectrum for fatigue analysis
 
 ### 2. Tooth optimization
 
-`03_tooth_optimization.m` - Main optimization script
+`scripts/03_tooth_optimization.m` - Main optimization script
 
 - Input: Design requirements and constraints
 - Output: Matrix of valid tooth combinations [N × 19 columns]
@@ -147,7 +147,7 @@ Export candidate designs to gear analysis software (KISSsoft) for:
 
 ### 4. Design selection
 
-`04_design_selection.m` - Reads detailed analysis results and ranks combinations based on safety factors and efficiency
+`scripts/04_design_selection.m` - Reads detailed analysis results and ranks combinations based on safety factors and efficiency
 
 ## Output Data
 
